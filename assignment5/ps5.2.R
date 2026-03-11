@@ -81,8 +81,7 @@ m_fe_plm = plm(Eval ~ Apct + Enrollment + Required,
                data = pdata, model = "within")
 phtest(m_fe_plm, m_re)
 
-## I could not install the plm package - will ask in class and then finish this exercise once i could download the package 
-## Sorry for the inconvenience!!!
+
 
 
 
