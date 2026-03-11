@@ -98,7 +98,7 @@ modelsummary(
   output = "markdown")
 
 #c) 
-#Year fixed effects absorb common time shocks: national economic cycles, presidential scandals, wars, or any other event that affects approval in all states simultaneously in a given year. If national unemployment rises during a recession, both the unemployment rate and presidential approval will move together in all states at once — not because of a state-level effect but because of the shared macro environment. Adding year dummies removes this source of confounding and identifies the effect of a state’s unemployment relative to the national average in each year. If the coefficient on UnemPct changes noticeably after adding year FEs, it suggests that common time trends were partly driving the relationship estimated with state FEs alone.
+#Year fixed effects absorb common time shocks: national economic cycles, presidential scandals, wars, or any other event that affects approval in all states simultaneously in a given year. If national unemployment rises during a recession, both the unemployment rate and presidential approval will move together in all states at once — not because of a state-level effect but because of the shared macro environment. Adding year dummies removes this source of confounding and identifies the effect of a state’s unemployment relative to the national average in each year. If the coefficient on UnemPct changes noticeably after adding year FEs, it suggests that common time trends were partly driving the relationship estimated with state FEs alone.9
 
 
 
