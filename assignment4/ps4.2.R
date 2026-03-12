@@ -269,7 +269,6 @@ modelsummary(
   gof_map = c("r.squared", "nobs"),
   output = "modelsummary_without_robust.html")
 
-
 #Why use robust SEs? Do the conclusions change? 
 #When incorporating robust standard errors, the conclusions do not change, but the inferences made become stronger and more robust. 
 #As the Residual vs. Fitted plots show, some heteroskedasticity remains in the used models; robust SE's correct the spread in the standard errors so they remain valid even if heteroskedasticity is present, therefore fixing the inference while retaining the same conclusion. 

@@ -73,7 +73,7 @@ modelsummary(
 pdata = pdata.frame(df, index = c("InstrID", "CourseID"))
 m_re = plm(Eval ~ Apct + Enrollment + Required, 
            data = pdata, model = "random")
-
+modelsummary(m_re)
 
 #b) Hausman test to assess whether FE or RE is more appropriate
 
@@ -81,7 +81,8 @@ m_fe_plm = plm(Eval ~ Apct + Enrollment + Required,
                data = pdata, model = "within")
 phtest(m_fe_plm, m_re)
 
+#H0: no correlation between unit effects and regressors (RE is consistent)
+#H1: correlation exists (only FE is consistent)
 
-
-
-
+#Ifp<0.05: reject H0 ⇒use FE
+#Ifp>0.05: fail to reject⇒RE or FE both OK => p = 0.178 => we can use both; RE and/or FE
