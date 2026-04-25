@@ -1,14 +1,14 @@
 **Replication files for Assignment 10** 
 
 
-###Project Description
+*Project Description*
 This project examines the relationship between GDP per capita and corruption 
 perceptions across countries using OLS regression. A level-level and a 
 level-log model are estimated and compared
 
 --- 
 
-###Running the code and replicating the results
+**Running the code and replicating the results:**
 
 When running the code, the order should respect the taskflow from below.
 
@@ -19,7 +19,7 @@ When running the code, the order should respect the taskflow from below.
 
 --- 
 
-**Files corresponding to tables and figures in main text**
+**Files corresponding to tables and figures in main text:**
 -Figure 1: `graphs/scatter.pdf`
 -Table 1: `tables/regression_table.tex`
 -Table 1: `tables/regression_table.png`
