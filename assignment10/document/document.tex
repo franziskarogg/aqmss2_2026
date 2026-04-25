@@ -1,0 +1,58 @@
+\documentclass[notitlepage]{article}
+\usepackage[margin = 2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx, dcolumn}
+
+\usepackage{booktabs}
+
+\title{Assignment 10 - Analysis}
+\author{Franziska Rogg}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\clearpage
+\section{Introduction}
+
+This analysis examines the relationship between corruption and economic development using cross-country data. I aim to compare a level - level  and a level-log specification to assess whether the effec of GDP per capita on corruption is linear or non-linear. 
+
+
+% ---------------------------------------------------------
+\section{Plot}
+% ----------------------------------------------------------
+
+Figure 1 shows that the relationship between GDP per capita and corruption is non-linear
+
+\begin{figure*}[htb!]
+  \centering
+  
+  \includegraphics[width = 0.6\textwidth]{../graphs/scatter.pdf}
+  \caption{GDP per capita and Corruption Perceptions Index}\label{fig1}
+  
+\end{figure*}
+
+\clearpage
+
+%----------------------------------------------------------
+\section{Models}
+% ----------------------------------------------------------
+
+Table 1 compares the level-level model with the level-log model. When comparing the R2 values, it can be seen that the level-log model is the better fit for capturing this relationship. 
+
+\begin{figure}[htb!] %---usually would be \begin{table} for tex tables
+  \centering
+  
+  %------ THIS DOES NOT WORK FOR ME: \input{../tables/regression_table.tex}
+  \includegraphics[width = 0.4\textwidth]{../tables/regression_table.png}
+  \caption{Effect of (Log) GDP per capita on Corruption}\label{tab1}
+\end{figure}
+
+
+\end{document}
+
+
+
+
+
