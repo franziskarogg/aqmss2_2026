@@ -15,14 +15,14 @@ When running the code, the order should respect the taskflow from below.
 --- 
 
 **Data & Main analysis:**
--[`analysis`](.): loads the data, two regression models, scatter plots and modelsummary, as well as summary statistics
+-[`analyses/analysis.R`](analyses/analysis.R): loads the data, two regression models, scatter plots and modelsummary, as well as summary statistics
 
 --- 
 
 **Files corresponding to tables and figures in main text:**
--Figure 1: `graphs/scatter.pdf`
--Table 1: `tables/regression_table.tex`
--Table 1: `tables/regression_table.png`
+-Figure 1: [`graphs/scatter.pdf`](graphs/scatter.pdf)
+-Table 1: [`tables/regression_table.tex`](tables/regression_table.tex)
+-Table 1: [`tables/regression_table.png`](tables/regression_table.png)
 
 ```
 R version 4.2.3 (2023-03-15)
