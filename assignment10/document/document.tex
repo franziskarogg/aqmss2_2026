@@ -4,6 +4,8 @@
 \usepackage{graphicx, dcolumn}
 
 \usepackage{booktabs}
+\usepackage{tabularray}
+\usepackage{siunitx}  % for \num{}
 
 \title{Assignment 10 - Analysis}
 \author{Franziska Rogg}
@@ -14,9 +16,10 @@
 \maketitle
 
 \clearpage
+% ----------------------------------------------------------
 \section{Introduction}
-
-This analysis examines the relationship between corruption and economic development using cross-country data. I aim to compare a level - level  and a level-log specification to assess whether the effec of GDP per capita on corruption is linear or non-linear. 
+% ----------------------------------------------------------
+This analysis examines the relationship between corruption and economic development using cross-country data. I aim to compare a level-level  and a level-log specification to assess whether the effec of GDP per capita on corruption is linear or non-linear. 
 
 
 % ---------------------------------------------------------
@@ -41,13 +44,23 @@ Figure 1 shows that the relationship between GDP per capita and corruption is no
 
 Table 1 compares the level-level model with the level-log model. When comparing the R2 values, it can be seen that the level-log model is the better fit for capturing this relationship. 
 
-\begin{figure}[htb!] %---usually would be \begin{table} for tex tables
+\input{../tables/regression_table.tex}
+
+% ----------------------------------------------------------
+\section{How to create a table}
+% ----------------------------------------------------------
+
+\begin{table}[htb!]
   \centering
-  
-  %------ THIS DOES NOT WORK FOR ME: \input{../tables/regression_table.tex}
-  \includegraphics[width = 0.4\textwidth]{../tables/regression_table.png}
-  \caption{Effect of (Log) GDP per capita on Corruption}\label{tab1}
-\end{figure}
+  \begin{tabular}{l c c c}
+    \hline
+    creating & a & table & 101 \\
+    \hline
+    1 & 2 & 3 & 4 \\
+    \hline
+  \end{tabular}
+  \caption{this is a table i created}\label{tab2}
+\end{table}
 
 
 \end{document}

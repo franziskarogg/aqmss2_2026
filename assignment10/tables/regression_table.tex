@@ -1,19 +1,27 @@
-\begin{table}
+\begin{table}[htb!]
 \centering
-\begin{tabular}[t]{lcc}
-\toprule
-  & Level-Level & Level-Log\\
-\midrule
-(Intercept) & \num{2.502}*** & \num{-8.114}***\\
- & (\num{0.146}) & (\num{0.840})\\
-undp\_gdp & \num{0.000}*** & \\
- & (\num{0.000}) & \\
-log(undp\_gdp) &  & \num{1.431}***\\
- &  & (\num{0.104})\\
-\midrule
-R2 & \num{0.673} & \num{0.603}\\
-Num.Obs. & \num{170} & \num{170}\\
-\bottomrule
-\multicolumn{3}{l}{\rule{0pt}{1em}+ p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001}\\
-\end{tabular}
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{8}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{10}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Level-Level & Level-Log \\
+(Intercept) & \num{2.502}*** & \num{-8.114}*** \\
+& (\num{0.146}) & (\num{0.840}) \\
+undp\_gdp & \num{0.000}*** &  \\
+& (\num{0.000}) &  \\
+log(undp\_gdp) &  & \num{1.431}*** \\
+&  & (\num{0.104}) \\
+R2 & \num{0.673} & \num{0.603} \\
+Num.Obs. & \num{170} & \num{170} \\
+\end{talltblr}
+\caption{Effect of (Log) GDP per capita on Corruption}\label{tab1}
 \end{table}
